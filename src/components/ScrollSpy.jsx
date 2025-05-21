@@ -48,7 +48,7 @@ export default function ScrollSpy() {
         <div>
             <nav className="section-nav">
                 {sections.map((section, index) => (
-                    <button key={section.id} onClick={() => navClick(index)} style={{
+                    <button className="button-nav" key={section.id} onClick={() => navClick(index)} style={{
                         fontWeight: activeTab === index ? "bold": "normal",
                         padding: "0.5rem 1 rem",
                         cursor: "pointer",
