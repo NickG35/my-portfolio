@@ -1,6 +1,4 @@
 .portfolio-section {
-    border: 1px solid white;
-    background-color: red;
     height: 100vh;
     padding: 2rem;
     box-sizing: border-box;
@@ -10,7 +8,7 @@
     position: fixed;
     top: 10%;
     right: 20px;
-    transform: translateY(-50%);
+    transform: translateY(-20%);
     display: flex;
     flex-direction: column;
     gap: 1rem;
@@ -23,4 +21,21 @@
 
 .button-nav:focus {
     outline: none;
+}
+
+.image-holder {
+    width: 400px;
+    height: 400px;
+    overflow: hidden;
+    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 5px solid black
+}
+
+.profile_pic {
+    width: 100%;
+    height: 100%;
+    object-fit:cover;
 }
