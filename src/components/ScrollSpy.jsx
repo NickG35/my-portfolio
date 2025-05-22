@@ -1,10 +1,18 @@
 import React, { useState, useEffect, useRef } from "react";
 import Home from './Home';
 import Projects from './Projects';
+import Skills from './Skills';
+import Services from './Services';
+import Experience from './Experience';
+import Contact from './Contact';
 
 const sections = [
     { id: "home", label: "Home", component: <Home /> },
     { id: "projects", label: "Projects", component: <Projects /> },
+    { id: "skills", label: "Skills", component: <Skills /> },
+    { id: "services", label: "Services", component: <Services /> },
+    { id: "experience", label: "Experience", component: <Experience /> },
+    { id: "contact", label: "Contact", component: <Contact /> },
 ];
 
 export default function ScrollSpy() {
