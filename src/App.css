@@ -10,7 +10,11 @@
     font-size: 10px;
     display: flex;
     padding-top: 5px;
-    z-index: 10;
+    backdrop-filter: blur(10px); /* blur effect */
+    -webkit-backdrop-filter: blur(10px); /* for Safari */
+    z-index: 1000; /* stay on top */
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1); /* subtle divider */
+  
 }
 
 .button-nav {
@@ -71,6 +75,32 @@
 
 #mail-link {
     width: 30px;
+}
+.language-div {
+    border-radius: 100%;
+    background: #1e130c;  
+    background: -webkit-linear-gradient(to right, #9a8478, #1e130c); 
+    background: linear-gradient(to right, #9a8478, #1e130c); 
+    width: 65px;
+    height: 65px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.language-logo {
+    width: 45px;              /* set fixed size */
+    height: 45px;             /* set fixed size */
+    object-fit: contain;      /* preserve aspect ratio */
+    display: block;
+}
+
+.skillRow {
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 20px;
+    align-items: center;
 }
 
 @media (min-width: 768px) {
