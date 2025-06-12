@@ -12,9 +12,15 @@ function Home(){
                     <div><h1 className="header">George</h1></div>
                 </div>
                 <div className="contact-info">
-                    <button>Resume</button>
-                    <img className="contact-links" src="src/assets/linkedin-logo-linkedin-icon-transparent-free-png.webp"></img>
-                    <img id="mail-link" className="contact-links" src="src/assets/gmail-new.png"></img>
+                    <a href="assets/Resume.docx" download>
+                        <button>Resume</button>
+                    </a>
+                    <a href="https://www.linkedin.com/in/nicholas-george-1a1204171" target="_blank">
+                        <img className="contact-links" src="src/assets/linkedin-logo-linkedin-icon-transparent-free-png.webp"></img>
+                    </a>
+                    <a href="mailto:ngeorge356@gmail.com">
+                        <img id="mail-link" className="contact-links" src="src/assets/gmail-new.png"></img>
+                    </a>
                 </div>
                 <div className="bio">
                     <p>Full Stack Developer based in Philadelphia with 2.5+ years of hands-on experience building modern web apps. Self-taught, driven, and ready to contribute to real-world teams while continuing to grow.</p>
